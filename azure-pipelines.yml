@@ -6,6 +6,15 @@
 trigger:
 - main
 
+parameters:
+  - name: pool
+    displayName: Agent pool
+    type: string
+    default: Azure Pipelines
+    values:
+      - Default
+      - Azure Pipelines
+
 pool:
   vmImage: ubuntu-latest
 strategy:
